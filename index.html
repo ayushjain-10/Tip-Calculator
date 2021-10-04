@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Tip Calculator</h1>
+      </header>
+      <div id="inputs">
+        <div id="bill-div">
+          <label for="bill">Bill Subtotal</label>
+          <input id="bill" value="00" type="number" />
+        </div>
+        <div id="tip-div">
+          <label for="tip">Tip Percentage</label>
+          <div id="tip-button">
+            <button type="button" for="tip" class="minus">-</button>
+            <input id="tip" value="00" min="0" type="number" />
+            <button type="button" for="tip" class="plus">+</button>
+          </div>
+        </div>
+        <div id="people-div">
+          <label for="people">Number of People Paying</label>
+          <div id="people-button">
+            <button type="button" for="people" class="minus">-</button>
+            <input id="people" value="1" min="1" type="number" />
+            <button type="button" for="people" class="plus">+</button>
+          </div>
+        </div>
+      </div>
+      <div id="displays">
+        <div id="tip-result">
+          <label id="tip-label" for="tip-display">Tip</label>
+          <input id="tip-display" value="0.00" min="0" type="number" />
+        </div>
+        <div id="total-result">
+          <label id="total-label" for="total-display">Total</label>
+          <div id="total-display">0.00</div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js" type="module"></script>
+  </body>
+</html>

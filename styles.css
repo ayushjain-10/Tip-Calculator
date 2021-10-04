@@ -1,0 +1,84 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #ac4910;
+}
+
+h1 {
+  text-align: center;
+}
+
+#inputs {
+  margin: 2rem -1rem 2rem 2rem;
+  display: flex;
+  padding: 3rem 15rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bill-div,
+#tip-div,
+#people-div,
+#tip-result,
+#total-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: larger;
+}
+
+input,
+#total-display,
+#tip-display {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: large;
+  background-color: #bbc943;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#total-display {
+  padding: 1.03rem 4rem;
+  margin: 1rem;
+}
+
+#tip-display {
+  border: none;
+  padding: 1.2rem 0rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#displays {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5rem 30rem;
+  font-size: larger;
+}
+
+#tip-button,
+#people-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 1rem;
+  background-color: #f6f7d4;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #7b8f0b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
